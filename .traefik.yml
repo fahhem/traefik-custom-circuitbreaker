@@ -1,12 +1,7 @@
-displayName: Demo Plugin
+displayName: Custom CircuitBreaker
 type: middleware
 iconPath: .assets/icon.png
 
-import: github.com/traefik/plugindemo
+import: github.com/fahhem/traefik-custom-circuitbreaker
 
-summary: '[Demo] Add Request Header'
-
-testData:
-  Headers:
-    X-Demo: test
-    X-URL: '{{URL}}'
+summary: 'Custom CircuitBreaker'
