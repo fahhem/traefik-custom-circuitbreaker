@@ -10,8 +10,7 @@ import (
 )
 
 func TestDemo(t *testing.T) {
-	cfg := circuitbreaker.CircuitBreakerConfig{}
-	cfg.SetDefaults()
+	cfg := circuitbreaker.CreateConfig()
 	cfg.Expression = "NetworkErrorRatio() >= 0.0 || NetworkErrorRatio() <= 0.0"
   cfg.ResponseCode = 204
 
